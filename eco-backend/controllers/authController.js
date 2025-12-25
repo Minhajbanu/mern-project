@@ -14,7 +14,7 @@ exports.signup = async (req, res) => {
 
     // Schema pre-save hook will hash the password automatically
     const user = await User.create({ name, email, password });
-
+    const JWT_SECRET = process.env.JWT_SECRET || "fallbackSecret123";
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '7d' });
     res.status(201).json({ 
       token, 
