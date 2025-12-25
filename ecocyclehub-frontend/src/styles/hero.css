@@ -1,0 +1,104 @@
+/* hero.css */
+.hero {
+  padding: 60px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hero Content Container */
+.hero-content {
+  display: flex;
+  padding: 40px;
+  border-radius: 16px;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.app.light .hero-content {
+  background: linear-gradient(135deg, #b2f2bb, #2d6a4f); /* light green → dark green */
+  color: #222;
+}
+
+/* Dark Mode */
+.app.dark .hero-content {
+  background: linear-gradient(135deg, #000000, #1b4332); /* black → dark green */
+  color: #f5f5f5;
+}
+
+/* Hero Left (Text) */
+.hero-left {
+  width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.hero-left p {
+  font-size: 15px;
+  font-family: monospace;
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 25px;
+  color: inherit;
+}
+
+/* CTA Button */
+.cta-btn {
+  background-color: white;
+  color: #24a867; /* green accent */
+  border: 2px solid #24a867;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #24a867;
+  color: white;
+  transform: scale(1.05);
+}
+
+.app.dark .cta-btn {
+  background-color: #24a867;
+  color: white;
+  border: 2px solid #24a867;
+}
+
+.app.dark .cta-btn:hover {
+  background-color: #1b4332;
+  border-color: #90ee90;
+  color: #90ee90;
+}
+
+/* Hero Right (Image) */
+.hero-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-right img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}

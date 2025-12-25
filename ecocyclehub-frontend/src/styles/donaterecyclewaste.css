@@ -1,0 +1,145 @@
+/* donate-form.css */
+.donate-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.app.light .donate-container {
+  background: linear-gradient(135deg, #b2f2bb, #2d6a4f); /* light green → dark green */
+  color: #222;
+}
+
+/* Dark Mode */
+.app.dark .donate-container {
+  background: linear-gradient(135deg, #000000, #1b4332); /* black → dark green */
+  color: #f5f5f5;
+}
+
+/* Left form section */
+.form-section {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode form section */
+.app.dark .form-section {
+  background-color: rgba(30, 30, 30, 0.95);
+  color: #f5f5f5;
+}
+
+.form-section h2 {
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: inherit;
+}
+
+.name-row {
+  display: flex;
+  gap: 10px;
+}
+
+.name-row input {
+  flex: 1;
+}
+
+/* Inputs and Textarea */
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #e0e0e0;
+  color: #222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode inputs */
+.app.dark .form-section input,
+.app.dark .form-section textarea {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Button */
+.form-section button {
+  background-color: #24a867;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-section button:hover {
+  background-color: #198754;
+  transform: scale(1.05);
+}
+
+/* Dark mode button */
+.app.dark .form-section button {
+  background-color: #24a867;
+  color: white;
+}
+
+.app.dark .form-section button:hover {
+  background-color: #1b4332;
+  border-color: #90ee90;
+  color: #90ee90;
+}
+
+/* Right image section */
+.image-section {
+  flex: 1;
+  background-color: rgba(169, 214, 198, 0.6); /* light green accent */
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode right section */
+.app.dark .image-section {
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+.image-section h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-section img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}

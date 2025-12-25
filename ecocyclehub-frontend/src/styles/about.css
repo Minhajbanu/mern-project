@@ -1,0 +1,75 @@
+/* about.css */
+
+/* About Container */
+.about-container {
+  padding: 60px 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Background (light green → dark green) */
+.app.light .about-container {
+  background: linear-gradient(135deg, #b2f2bb, #2d6a4f);
+  color: #222;
+}
+
+/* Dark Mode Background (black → dark green) */
+.app.dark .about-container {
+  background: linear-gradient(135deg, #000000, #1b4332);
+  color: #f5f5f5;
+}
+
+/* About Box */
+.about-box {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  padding: 40px;
+  border-radius: 16px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode About Box */
+.app.dark .about-box {
+  background: rgba(30, 30, 30, 0.95);
+  color: #f5f5f5;
+}
+
+/* Left Section (Image) */
+.about-left img {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Section (Text) */
+.about-right {
+  max-width: 500px;
+  padding-left: 40px;
+}
+
+.about-right h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #24a867; /* Green accent */
+  transition: color 0.3s ease;
+}
+
+/* Dark mode heading */
+.app.dark .about-right h1 {
+  color: #90ee90;
+}
+
+.about-right p {
+  font-size: 15px;
+  font-family: monospace;
+  line-height: 1.8;
+  color: inherit;
+}

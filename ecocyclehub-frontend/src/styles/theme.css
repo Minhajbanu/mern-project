@@ -1,0 +1,42 @@
+/* Smooth theme transitions */
+.app {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/* Light theme (light green + dark green) */
+.app.light {
+    background: linear-gradient(to bottom right, #c8e6c9, #2e7d32);
+    color: #1b1b1b;
+}
+
+/* Dark theme (dark green + black) */
+.app.dark {
+    background: linear-gradient(to bottom right, #1b5e20, #000000);
+    color: #e0e0e0;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+}
+
+.navbar button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #2e7d32;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #1b5e20;
+}

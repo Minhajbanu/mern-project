@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Form Section */
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  
+  padding: 5px;
+  display: inline-block;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #b0b0b0;
+  font-size: 14px;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Right Image Section */
+.image-section {
+  flex: 1;
+  background-color: #a6d5b3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-overlay {
+  margin-bottom: 20px;
+  color: rgb(3, 83, 3);
+}
+
+.text-overlay h1 {
+  font-size: 28px;
+  font-weight: bold;
+}

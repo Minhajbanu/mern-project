@@ -1,0 +1,96 @@
+/* Container */
+.dashboard-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff; /* white background */
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 128, 0, 0.15); /* soft green shadow */
+  color: #1f2937; /* dark text */
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #065f46; /* dark green */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Loading / Empty Text */
+.loading-text,
+.no-donations {
+  font-size: 18px;
+  text-align: center;
+  color: #4b5563; /* grayish text */
+}
+
+/* Table Wrapper */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table */
+.donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9fafb; /* very light gray table bg */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.donation-table th,
+.donation-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #d1fae5; /* light green border */
+  color: #1f2937;
+}
+
+.donation-table th {
+  background-color: #10b981; /* bright green header */
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.donation-table tr:hover {
+  background-color: #dcfce7; /* soft green hover */
+  transition: 0.3s;
+}
+
+/* Status Badges */
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.status.pending {
+  background-color: #fbbf24; /* Amber */
+}
+.status.completed {
+  background-color: #10b981; /* Green */
+}
+.status.cancelled {
+  background-color: #ef4444; /* Red */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .donation-table th,
+  .donation-table td {
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+
+  .dashboard-title {
+    font-size: 24px;
+  }
+}
